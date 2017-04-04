@@ -2,7 +2,7 @@ require 'HTTParty'
 
 
 class DataCleaner
-  attr_accessor :winners, :url, :results,
+  attr_accessor :winners, :url, :results
 
   def initialize(url)
     # Initializes with the API URL and a result set.
