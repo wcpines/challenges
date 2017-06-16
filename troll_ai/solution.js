@@ -37,9 +37,9 @@ function Stacker(){
       path        = [];
 
   var completedStairs = [],
-    offStairs         = true,
-    exploreGoal       = null,
-    reAttempt         = 0
+      offStairs       = true,
+      exploreGoal     = null,
+      reAttempt       = 0
 
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -210,7 +210,7 @@ function Stacker(){
 
 
   // returns the closest blank cell that is adjacent to an unexplored cell if
-  // the blank is not accessible (cannot be aStar-ed, the next closest is used
+  // the blank is not accessible (cannot be aStar-ed, the next closest is used)
   function nearestNull(currentCell){
     var blanks = []
     for (var i = 0; i < map.length; i++){
@@ -234,7 +234,7 @@ function Stacker(){
     var nextStep,
       x = towerCell.x - currentCell.x,
       y = towerCell.y - currentCell.y,
-      towerOrientation = {x,y} //es6 object syntax
+      towerOrientation = {x,y}
 
     switch(true){
       case towerOrientation.x === -1 && towerOrientation.y === 0:
